@@ -642,3 +642,43 @@ h1 {
     text-align: center;
     border-left: 5px solid #7fb8d3;
 }
+
+#gallery-1446 {
+    padding: var(--sectionPadding, 3rem 1rem);
+}
+
+#gallery-1446 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(2rem, 5vw, 3rem);
+}
+
+#gallery-1446 .cs-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+#gallery-1446 .cs-image {
+    min-height: 18rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+#gallery-1446 .cs-image img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; 
+}
+
+#gallery-1446 .cs-image:hover img {
+    transform: scale(1.05); 
+}
