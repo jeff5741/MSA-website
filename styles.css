@@ -32,10 +32,11 @@ h1 {
     letter-spacing: -0.02em;
 }
 .navbar {
-    background: linear-gradient(135deg, #a8d5e2 0%, #7fb8d3 100%);
+    background: linear-gradient(135deg, #c41e1e 0%, #950606 100%);
     padding: 15px 0;
     position: relative;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    
 }
 
 .nav-container {
@@ -83,7 +84,7 @@ h1 {
 }
 
 .four .container .member {
-    background-color: #a8d5e2; 
+    background: linear-gradient(135deg, #c41e1e 0%, #950606 100%);
     padding: 32px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
@@ -118,13 +119,13 @@ h1 {
 .four .container .member h3{
     font-size: 24px;
     font-weight: 600;
-    color: #161b22;
+    color: #e6eaef;
     margin-bottom: 12px;
 }
 
 .four .container .member p {
     font-size: 16px;
-    color: #161b22;
+    color: #e6eaef;
     line-height: 1.5;
     margin-bottom: 20px;
     flex-grow: 1; /* Ensures equal height cards */
@@ -141,7 +142,7 @@ h1 {
 }
 
 .four .container .member a:hover {
-    color: #79c0ff;
+    background: linear-gradient(135deg, #81DACA 0%, #b9d5bc 100%);
 }
 
 @media (max-width: 768px) {
@@ -162,7 +163,7 @@ h1 {
 
 
 .palestine-banner {
-    background-color: #a8d5e2;
+    background-color: #923030;
     color: white;
     text-align: center;
     padding: 8px 0;
@@ -323,7 +324,9 @@ h1 {
 }
 
 .welcome-box {
-    background-color: #7fb8d3;
+    background: linear-gradient(135deg, #81DACA 0%, #b9d5bc 100%);
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 8px 16px;
     border-radius: 20px;
     display: inline-block;
@@ -535,7 +538,10 @@ h1 {
     box-shadow: 0 8px 25px rgba(212, 172, 88, 0.3);
 }
 .footer {
-    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    background: linear-gradient(135deg, #c41e1e 0%, #950606 100%);
+    padding: 15px 0;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -632,7 +638,7 @@ h1 {
     display: block;
     font-size: 12px;
     font-weight: 600;
-    color: #7fb8d3;
+    color: #1a1a1a;
     margin-bottom: 3px;
 }
 
@@ -640,7 +646,7 @@ h1 {
     background-color: #f8f9fa; /* match other rows */
     font-weight: 600;
     text-align: center;
-    border-left: 5px solid #7fb8d3;
+    border-left: 5px solid #1a1a1a;
 }
 
 #gallery-1446 {
@@ -682,3 +688,83 @@ h1 {
 #gallery-1446 .cs-image:hover img {
     transform: scale(1.05); 
 }
+
+/* Page hero (top of housing page) */
+.page-hero {
+    color: #fff;
+    padding: 60px 0;
+  }
+  .page-hero__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .page-hero h2.page-title {
+    color: #1a1a1a !important;
+  }
+  .page-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  .page-subtitle {
+    max-width: 720px;
+    margin: 12px auto 20px;
+    color: #666;
+  }
+
+
+  
+  /* Housing / Roommates */
+  .housing-section {
+    padding: 60px 20px;
+    background: #fafafa;
+  }
+  .housing-cta {
+    display: inline-block;
+    background-color: #d4ac58;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  }
+  .housing-cta:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    background-color: #a38243;
+  }
+  
+  /* Google Form embed */
+  .form-embed {
+    position: relative;
+    max-width: 900px;
+    margin: 18px auto 8px;
+    background: #b9d5bc;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+  }
+  .form-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .housing-note {
+    text-align: center;
+    color: #2c5530;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+
+  
+  
+  @media (max-width: 768px) {
+    .form-embed { aspect-ratio: 1 / 1; }
+  }
+  
