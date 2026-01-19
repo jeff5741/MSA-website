@@ -63,39 +63,40 @@
         <div class="container">
             <div class="header-section">
                 <h1>De Anza MSA Events</h1>
-                
-                
                 <div class="cycle-info">
                     Discover our Events and join us for many days of fun
                 </div>
-               
-    
+            </div>
+        
             <div class="tabs-container">
-                
                 <div class="tabs">
-                    <button class="tab active" onclick="showTab('classic')">Fall 2025</button>
+                    <button class="tab active" onclick="showTab('Winter')">Winter 2026</button>
+                    <button class="tab" onclick="showTab('classic')">Fall 2025</button>
                 </div>
-    
-                <div id="classic" class="tab-content active">
+        
+                <!-- Winter 2026 Events -->
+                <div id="Winter" class="tab-content active">
                     <div class="events-grid">
-                       
-                        
-                   <!-- <div class="events-card">
-                            <span class="events-emoji">🇵🇸</span>
-                            <div class="events-name">SJP and De Anza MSA</div>
-                            <div class="events-description">Learn about the history of palestine with De Anza MSA and De Anza SJP</div>
+                        <div class="events-card">
+                            <span class="events-emoji">☕️</span>
+                            <div class="events-name">2nd De Anza MSA Club Meet</div>
+                            <div class="events-description">Join us for Tacos, Mafia, or just to hangout.</div>
                             <div class="card-buttons-events">
-                                <a href="https://www.instagram.com/deanzamsa/" class="hero-button-join" target="_blank"> Register →</a>
-                                
-                            </div> 
-                        </div> -->
+                                <a href="https://tinyurl.com/MSA-general-meet" class="hero-button-join" target="_blank">1/21</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Fall 2025 Events -->
+                <div id="classic" class="tab-content">
+                    <div class="events-grid">
                         <div class="events-card">
                             <span class="events-emoji">🎮</span>
                             <div class="events-name">De Anza Game Night</div>
                             <div class="events-description">Connect with people in De Anza MSA in our annual Game night</div>
                             <div class="card-buttons-events">
                                 <a href="https://tinyurl.com/msa-game-night" class="hero-button-join" target="_blank">09/26</a>
-                                
                             </div>
                         </div>
                         <div class="events-card">
@@ -104,7 +105,6 @@
                             <div class="events-description">In collaboration with De Anza MSA UC Santa Cruz MSA and SJSU MSA!</div>
                             <div class="card-buttons-events">
                                 <a href="https://luma.com/8q2e9fo7" class="hero-button-join" target="_blank">10/03</a>
-                                
                             </div>
                         </div>
                         <div class="events-card">
@@ -113,19 +113,14 @@
                             <div class="events-description">Join UC Santa Cruz's Picnic in collaboration with 9 NorCal MSAs </div>
                             <div class="card-buttons-events">
                                 <a href="https://luma.com/pvm3wnc5" class="hero-button-join" target="_blank">10/12</a>
-                                
                             </div>
                         </div>
-                       
-                    
-                        
                         <div class="events-card">
                             <span class="events-emoji">🌙</span>
                             <div class="events-name">De Anza MSA Halaqa</div>
                             <div class="events-description">Join our halaqa with Imam Sufiyan, light refreshements will be provided.</div>
                             <div class="card-buttons-events">
                                 <a href="https://tinyurl.com/halaqa-rsvp" class="hero-button-join" target="_blank">10/27</a>
-                                
                             </div>
                         </div>
                         <div class="events-card">
@@ -134,7 +129,6 @@
                             <div class="events-description">Come meet and get to know MSA, and join for snacks.</div>
                             <div class="card-buttons-events">
                                 <a href="https://tinyurl.com/club-meet-rsvp" class="hero-button-join" target="_blank">10/29</a>
-                                
                             </div>
                         </div>
                         <div class="events-card">
@@ -143,9 +137,7 @@
                             <div class="events-description">Join us in packing emergency kits for those in need.</div>
                             <div class="card-buttons-events">
                                 <a href="http://tinyurl.com/msa-kits-packing" class="hero-button-join" target="_blank">11/07</a>
-                                
                             </div>
-                           
                         </div>
                         <div class="events-card">
                             <span class="events-emoji">⚽</span>
@@ -153,9 +145,7 @@
                             <div class="events-description">Play fun games and sports with the chance to win prizes.</div>
                             <div class="card-buttons-events">
                                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSewSvGUsfp87FRU7c2nfcHx4O2eC1Ec1LR-v7Mn5FuQNnU0cQ/viewform" class="hero-button-join" target="_blank">11/14</a>
-
                             </div>
-                           
                         </div>
                         <div class="events-card">
                             <span class="events-emoji">🍽️</span>
@@ -163,9 +153,7 @@
                             <div class="events-description">Join us for an evening of food, and games.</div>
                             <div class="card-buttons-events">
                                 <a href="https://deanzamenaa.vercel.app/events" class="hero-button-join" target="_blank">11/14</a>
-
                             </div>
-                           
                         </div>
                         <div class="events-card">
                             <span class="events-emoji">☕️</span>
@@ -173,13 +161,38 @@
                             <div class="events-description">Join us for Tacos, Mafia, or just to hangout.</div>
                             <div class="card-buttons-events">
                                 <a href="https://tinyurl.com/MSA-club-meet" class="hero-button-join" target="_blank">11/26</a>
-                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        
+        
+        <script>
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tab buttons
+            const tabButtons = document.querySelectorAll('.tab');
+            tabButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // Show the selected tab content
+            const selectedTab = document.getElementById(tabName);
+            if (selectedTab) {
+                selectedTab.classList.add('active');
+            }
+            
+            // Add active class to the clicked button
+            event.target.classList.add('active');
+        }
+        </script>
+
         <div class="tabs-container"> 
                       
                      <div class="container">
@@ -207,6 +220,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
         <section class="prayer-times-section">
             <div class="container">
@@ -273,6 +288,7 @@
         <p>© Copyright 2025, All Rights Reserved by De Anza Msa</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="script.js">
+    </script>
 </body>
 </html>
